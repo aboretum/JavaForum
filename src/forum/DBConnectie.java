@@ -26,7 +26,7 @@ public class DBConnectie{
 	
 	public void connect() {
     	try {
-        	conn = DriverManager.getConnection("jdbc:mysql://localhost/" + DBName + "?user=" + DBUser + "&password=" + DBPass);
+        	conn = DriverManager.getConnection("jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/" + "javaforum798" + "?user=" + "adminvGKk55S" + "&password=" + "9AaaIVFFLYCa");
         }catch(Exception e){}
     }
 	
